@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-include alocane/shell-common lib/log.sh
+include "${CALLER_PACKAGE:-"alocane/shell-common"}" lib/log.sh
 
 getVersion() {
     local vFileBasic="version"

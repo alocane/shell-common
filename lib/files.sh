@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-include alocane/shell-common lib/strings.sh
-include alocane/shell-common lib/log.sh
+include "${CALLER_PACKAGE:-"alocane/shell-common"}" lib/strings.sh
+include "${CALLER_PACKAGE:-"alocane/shell-common"}" lib/log.sh
 
 #
 # Create $1 as a folder if it does not already exists as a file
