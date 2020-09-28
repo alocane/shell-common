@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-include log2/shell-common lib/strings.sh
+include alocane/shell-common lib/strings.sh
 
 wh() {
 	local command_name="$1"
@@ -192,8 +192,8 @@ req1() {
 }
 
 req() {
-	log "Performing pre-boot script sanity checks..."
+	# log "Performing pre-boot script sanity checks..."
 	for p in "$@"; do req1 "${p}" ; done
-	log "$(green "Script sanity checks completed successfully, current script $(b "$0") can start!")"
-	log
+	# log "$(green "Script sanity checks completed successfully, current script $(b "$0") can start!")"
+	# log
 }
